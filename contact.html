@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact- Lodia Oriane ETI DIPITA</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Ndongo Fodouop Lodia Oriane ETI DIPITA</div>
+            <ul class="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="hobbies.html">Centres d'intérêts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Section Contact -->
+    <main class="main-content">
+        <div class="container">
+            <div class="section-content">
+                <h2>Me Contacter</h2>
+                <p>Vous avez un projet en tête ? N'hésitez pas à me contacter pour discuter de vos besoins.</p>
+                
+                <form id="contactForm" onsubmit="submitForm(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" required>
+                            <div class="error" id="nom-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                            <div class="error" id="prenom-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error" id="email-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone">
+                            <div class="error" id="telephone-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="entreprise">Entreprise</label>
+                            <input type="text" id="entreprise" name="entreprise">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="type-projet">Type de projet</label>
+                            <select id="type-projet" name="type-projet">
+                                <option value="">Sélectionnez un type</option>
+                                <option value="site-web">Site web</option>
+                                <option value="application-mobile">Application mobile</option>
+                                <option value="creation-graphique">Créations graphiques</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Décrivez votre projet..." required></textarea>
+                            <div class="error" id="message-error"></div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <button type="submit" class="submit-btn">Envoyer le message</button>
+                        </div>
+                    </div>
+                    
+                    <div id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="portfo.js"></script>
+</body>
+</html>
